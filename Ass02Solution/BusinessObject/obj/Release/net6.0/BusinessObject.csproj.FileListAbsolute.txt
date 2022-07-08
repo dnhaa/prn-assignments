@@ -1,0 +1,14 @@
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\bin\Release\net6.0\BusinessObject.deps.json
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\bin\Release\net6.0\BusinessObject.runtimeconfig.json
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\bin\Release\net6.0\BusinessObject.dll
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\bin\Release\net6.0\BusinessObject.pdb
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.csproj.AssemblyReference.cache
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.AssemblyInfoInputs.cache
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.AssemblyInfo.cs
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.csproj.CoreCompileInputs.cache
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.dll
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\refint\BusinessObject.dll
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.pdb
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\BusinessObject.genruntimeconfig.cache
+D:\fpt\su22\prn211\workspace\fstore-sales-management\Ass02Solution\BusinessObject\obj\Release\net6.0\ref\BusinessObject.dll
