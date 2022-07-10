@@ -219,6 +219,7 @@
             this.Controls.Add(this.lbCountry);
             this.Controls.Add(this.lbMemberId);
             this.Name = "frmMembers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Members";
             this.Load += new System.EventHandler(this.frmMembers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMemberList)).EndInit();

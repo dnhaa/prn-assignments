@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bLYfg6zuY4e971evES5C41slW8fc/Kgw9BaFUTiIjhvMesMX2w2YdVKUDDdSZzxGas9C54IyCxkULL+Q4f9Lxg==",
+  "dgSpecHash": "shAA83I9t24lC7Tjxbr46fojwgngatLJ3xVD0rGc7AAa14Xx37bVvGDaWSKpMitMzTtN81nVmw4aOG/gRQjYwg==",
   "success": true,
-  "projectFilePath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\DataAccess.csproj",
+  "projectFilePath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

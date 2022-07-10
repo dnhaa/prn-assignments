@@ -7,7 +7,7 @@ namespace BusinessObject
     {
         public Member()
         {
-            //Orders = new HashSet<Order>();
+            Orders = new HashSet<Order>();
         }
 
         public int MemberId { get; set; }
@@ -17,6 +17,6 @@ namespace BusinessObject
         public string Country { get; set; } = null!;
         public string Password { get; set; } = null!;
 
-        //public virtual ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
     }
 }

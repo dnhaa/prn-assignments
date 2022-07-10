@@ -182,6 +182,7 @@
             this.Controls.Add(this.lbCategoryId);
             this.Controls.Add(this.lbProductId);
             this.Name = "frmProductDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProductDetails";
             this.Load += new System.EventHandler(this.frmProductDetails_Load);
             this.ResumeLayout(false);

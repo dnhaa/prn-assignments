@@ -9,6 +9,10 @@ namespace DataAccess.Repository
 {
     public class OrderDetailRepository : IOrderDetailRepository
     {
-        public IEnumerable<Tuple<int, string, decimal, int, decimal>> GetOrderDetailList() => OrderDetailDAO.Instance.GetOrderDetailList();
+        public IEnumerable<object> FilterDate(DateTime startDate, DateTime endDate) => OrderDetailDAO.Instance.FilterDate(startDate, endDate);
+
+        public IEnumerable<Object> GetOrderDetailList() => OrderDetailDAO.Instance.GetOrderDetailList();
+
+        public IEnumerable<Object> SortSalesDescending() => OrderDetailDAO.Instance.SortSalesDescending();
     }
 }

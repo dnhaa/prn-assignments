@@ -7,7 +7,7 @@ namespace BusinessObject
     {
         public Product()
         {
-            //OrderDetails = new HashSet<OrderDetail>();
+            OrderDetails = new HashSet<OrderDetail>();
         }
 
         public int ProductId { get; set; }
@@ -17,6 +17,6 @@ namespace BusinessObject
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
 
-        //public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }

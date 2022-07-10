@@ -5,6 +5,9 @@ namespace DataAccess.Repository
 {
     public interface IOrderDetailRepository
     {
-        IEnumerable<Tuple<int, string, decimal, int, decimal>> GetOrderDetailList();
+        IEnumerable<Object> GetOrderDetailList();
+        IEnumerable<Object> SortSalesDescending();
+        IEnumerable<Object> FilterDate(DateTime startDate, DateTime endDate);
+
     }
 }

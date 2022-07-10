@@ -219,6 +219,7 @@
             this.Controls.Add(this.lbShippedDate);
             this.Controls.Add(this.lbOrderId);
             this.Name = "frmOrders";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOrders";
             this.Load += new System.EventHandler(this.frmOrders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderList)).EndInit();

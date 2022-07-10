@@ -182,7 +182,7 @@
             this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.lbMemberId);
             this.Name = "frmMemberDetails";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMemberDetails";
             this.Load += new System.EventHandler(this.frmMemberDetails_Load);
             this.ResumeLayout(false);

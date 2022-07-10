@@ -3196,11 +3196,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\SalesWinApp\\SalesWinApp.csproj",
+      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\SalesWinApp\\SalesWinApp.csproj",
       "projectName": "SalesWinApp",
-      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\SalesWinApp\\SalesWinApp.csproj",
+      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\SalesWinApp\\SalesWinApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\SalesWinApp\\obj\\",
+      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\SalesWinApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\application\\vs\\shared\\NuGetPackages"
@@ -3221,11 +3221,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj"
+            "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj"
             },
-            "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\DataAccess.csproj"
+            "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\DataAccess.csproj"
             }
           }
         }

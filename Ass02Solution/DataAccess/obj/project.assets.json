@@ -3177,11 +3177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\DataAccess\\obj\\",
+      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\application\\vs\\shared\\NuGetPackages"
@@ -3202,8 +3202,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj": {
-              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj"
+            "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj"
             }
           }
         }

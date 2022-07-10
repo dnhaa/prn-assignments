@@ -15,7 +15,8 @@ namespace SalesWinApp
             //Application.Run(new frmMembers());
             //Application.Run(new frmOrders());
             //Application.Run(new frmProducts());
-            Application.Run(new salesStatisticReport());
+            Application.Run(new frmMain());
+
 
         }
     }

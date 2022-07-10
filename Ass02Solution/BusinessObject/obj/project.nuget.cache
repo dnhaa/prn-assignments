@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yruIFEubR9wq86dm+juF+lYAz3iIfmlA7+p7vCD3GaRFb6oy7ozGNf0bmFr0sEaC3Tppf4LeT4abU4m5n+/O2A==",
+  "dgSpecHash": "tzzxj1B9+qh0yTua8yxHtRWrqORVff26EfG+dvUhkvTKG2gbrkwow0ydLYj9EIEjppeNlDHLQACZ5Z1n/CzFlw==",
   "success": true,
-  "projectFilePath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
+  "projectFilePath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

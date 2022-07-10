@@ -278,6 +278,7 @@
             this.Controls.Add(this.lbUnitPrice);
             this.Controls.Add(this.lbProductId);
             this.Name = "frmProducts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Products";
             this.Load += new System.EventHandler(this.frmProducts_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProductList)).EndInit();

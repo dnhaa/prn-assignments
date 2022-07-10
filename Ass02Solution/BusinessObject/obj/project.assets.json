@@ -1833,11 +1833,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
+      "projectUniqueName": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
       "projectName": "BusinessObject",
-      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
+      "projectPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\BusinessObject.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\fstore-sales-management\\Ass02Solution\\BusinessObject\\obj\\",
+      "outputPath": "D:\\fpt\\su22\\prn211\\workspace\\prn-assignments\\Ass02Solution\\BusinessObject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\application\\vs\\shared\\NuGetPackages"
