@@ -7,6 +7,8 @@ namespace SalesWinApp
 {
     public partial class frmMain : Form
     {
+        public Member MemberInfo { get; set; }
+        IMemberRepository MemberRepository = new MemberRepository();
         IOrderDetailRepository orderDetailRepository = new OrderDetailRepository();
         BindingSource source;
         public frmMain()
@@ -15,7 +17,26 @@ namespace SalesWinApp
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-
+            if (MemberInfo != null)
+            {
+                foreach (var lbl in Controls.OfType<Label>())
+                    lbl.Hide();
+                foreach (var lbl in Controls.OfType<TextBox>())
+                    lbl.Hide();
+                foreach (var lbl in Controls.OfType<DataGridView>())
+                    lbl.Hide();
+                foreach (var lbl in Controls.OfType<DateTimePicker>())
+                    lbl.Hide();
+                foreach (var lbl in Controls.OfType<Button>())
+                    lbl.Hide();
+                menuProductManagement.Visible = false;
+                btnMemberManagement.Visible = false;
+                btnAddMember.Visible = false;
+                btnOrderManagement.Visible = false;
+                btnAddOrder.Visible = false;
+                lbMain.Visible = true;
+                lbMain.Text = "Welcome to user page";
+            }
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -86,7 +107,10 @@ namespace SalesWinApp
 
         private void btnOrderManagement_Click(object sender, EventArgs e)
         {
-            frmOrders frmOrders = new frmOrders();
+            frmOrders frmOrders = new frmOrders
+            {
+                MemberInfo = MemberInfo
+            };
             frmOrders.ShowDialog();
         }
 
@@ -94,6 +118,35 @@ namespace SalesWinApp
         {
             frmOrderDetails frmOrderDatail = new frmOrderDetails();
             frmOrderDatail.ShowDialog();
+        }
+
+        private void menuMemberManagement_Click(object sender, EventArgs e)
+        {
+            if (MemberInfo != null)
+            {
+                frmMemberDetails frmMemberDetails = new frmMemberDetails
+                {
+                    InsertOrUpdate = true,
+                    MemberInfo = MemberInfo,
+                    MemberRepository = new MemberRepository()
+                };
+                if (frmMemberDetails.ShowDialog() == DialogResult.OK)
+                {
+                    MemberInfo = MemberRepository.GetMemberById(MemberInfo.MemberId);
+                }
+            }
+        }
+
+        private void menuOrderManagement_Click(object sender, EventArgs e)
+        {
+            if (MemberInfo != null)
+            {
+                frmOrders frmOrders = new frmOrders
+                {
+                    MemberInfo = MemberInfo
+                };
+                frmOrders.ShowDialog();
+            }
         }
     }
 }

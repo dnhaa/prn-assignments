@@ -32,12 +32,12 @@
             this.menuMemberManagement = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMemberManagement = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddMember = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuProductManagement = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnProductManagement = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAddProduct = new System.Windows.Forms.ToolStripMenuItem();
             this.menuOrderManagement = new System.Windows.Forms.ToolStripMenuItem();
             this.btnOrderManagement = new System.Windows.Forms.ToolStripMenuItem();
             this.btnAddOrder = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuProductManagement = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnProductManagement = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAddProduct = new System.Windows.Forms.ToolStripMenuItem();
             this.txtEndDate = new System.Windows.Forms.DateTimePicker();
             this.lbTo = new System.Windows.Forms.Label();
             this.txtStartDate = new System.Windows.Forms.DateTimePicker();
@@ -57,8 +57,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuMemberManagement,
-            this.menuProductManagement,
-            this.menuOrderManagement});
+            this.menuOrderManagement,
+            this.menuProductManagement});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(928, 28);
@@ -73,6 +73,7 @@
             this.menuMemberManagement.Name = "menuMemberManagement";
             this.menuMemberManagement.Size = new System.Drawing.Size(79, 24);
             this.menuMemberManagement.Text = "Member";
+            this.menuMemberManagement.Click += new System.EventHandler(this.menuMemberManagement_Click);
             // 
             // btnMemberManagement
             // 
@@ -88,6 +89,30 @@
             this.btnAddMember.Text = "Add member";
             this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
+            // menuOrderManagement
+            // 
+            this.menuOrderManagement.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnOrderManagement,
+            this.btnAddOrder});
+            this.menuOrderManagement.Name = "menuOrderManagement";
+            this.menuOrderManagement.Size = new System.Drawing.Size(61, 24);
+            this.menuOrderManagement.Text = "Order";
+            this.menuOrderManagement.Click += new System.EventHandler(this.menuOrderManagement_Click);
+            // 
+            // btnOrderManagement
+            // 
+            this.btnOrderManagement.Name = "btnOrderManagement";
+            this.btnOrderManagement.Size = new System.Drawing.Size(220, 26);
+            this.btnOrderManagement.Text = "Open management";
+            this.btnOrderManagement.Click += new System.EventHandler(this.btnOrderManagement_Click);
+            // 
+            // btnAddOrder
+            // 
+            this.btnAddOrder.Name = "btnAddOrder";
+            this.btnAddOrder.Size = new System.Drawing.Size(220, 26);
+            this.btnAddOrder.Text = "Add order";
+            this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
+            // 
             // menuProductManagement
             // 
             this.menuProductManagement.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -100,39 +125,16 @@
             // btnProductManagement
             // 
             this.btnProductManagement.Name = "btnProductManagement";
-            this.btnProductManagement.Size = new System.Drawing.Size(224, 26);
+            this.btnProductManagement.Size = new System.Drawing.Size(220, 26);
             this.btnProductManagement.Text = "Open management";
             this.btnProductManagement.Click += new System.EventHandler(this.btnProductManagement_Click);
             // 
             // btnAddProduct
             // 
             this.btnAddProduct.Name = "btnAddProduct";
-            this.btnAddProduct.Size = new System.Drawing.Size(224, 26);
+            this.btnAddProduct.Size = new System.Drawing.Size(220, 26);
             this.btnAddProduct.Text = "Add product";
             this.btnAddProduct.Click += new System.EventHandler(this.btnAddProduct_Click);
-            // 
-            // menuOrderManagement
-            // 
-            this.menuOrderManagement.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnOrderManagement,
-            this.btnAddOrder});
-            this.menuOrderManagement.Name = "menuOrderManagement";
-            this.menuOrderManagement.Size = new System.Drawing.Size(61, 24);
-            this.menuOrderManagement.Text = "Order";
-            // 
-            // btnOrderManagement
-            // 
-            this.btnOrderManagement.Name = "btnOrderManagement";
-            this.btnOrderManagement.Size = new System.Drawing.Size(224, 26);
-            this.btnOrderManagement.Text = "Open management";
-            this.btnOrderManagement.Click += new System.EventHandler(this.btnOrderManagement_Click);
-            // 
-            // btnAddOrder
-            // 
-            this.btnAddOrder.Name = "btnAddOrder";
-            this.btnAddOrder.Size = new System.Drawing.Size(224, 26);
-            this.btnAddOrder.Text = "Add order";
-            this.btnAddOrder.Click += new System.EventHandler(this.btnAddOrder_Click);
             // 
             // txtEndDate
             // 
@@ -224,11 +226,12 @@
             this.lbMain.AutoSize = true;
             this.lbMain.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbMain.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.lbMain.Location = new System.Drawing.Point(240, 56);
+            this.lbMain.Location = new System.Drawing.Point(234, 56);
             this.lbMain.Name = "lbMain";
             this.lbMain.Size = new System.Drawing.Size(449, 59);
             this.lbMain.TabIndex = 18;
             this.lbMain.Text = "Sales Statistic Report";
+            this.lbMain.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmMain
             // 

@@ -58,6 +58,39 @@ namespace DataAccess
             }
             return orders;
         }
+        public IEnumerable<Order> GetOrderListForMember(Member member)
+        {
+            IDataReader dataReader = null;
+            string SQLSelect = "Select OrderId, MemberId, OrderDate, RequiredDate, ShippedDate, Freight from [Order] where MemberId = @MemberId";
+            var orders = new List<Order>();
+            try
+            {
+                var param = dataProvider.CreateParameter("@MemberId", 4, member.MemberId, DbType.Int32);
+                dataReader = dataProvider.GetDataReader(SQLSelect, CommandType.Text, out connection, param);
+                while (dataReader.Read())
+                {
+                    orders.Add(new Order
+                    {
+                        OrderId = dataReader.GetInt32(0),
+                        MemberId = dataReader.GetInt32(1),
+                        OrderDate = dataReader.GetDateTime(2),
+                        RequiredDate = dataReader.GetDateTime(3),
+                        ShippedDate = dataReader.GetDateTime(4),
+                        Freight = dataReader.GetDecimal(5)
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dataReader.Close();
+                CloseConnection();
+            }
+            return orders;
+        }
         //------------------------------
         public Order GetOrderById(int orderId)
         {

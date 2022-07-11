@@ -1,6 +1,8 @@
 ﻿using System.Data;
 using BusinessObject;
 using Microsoft.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 
 namespace DataAccess
 {
@@ -79,6 +81,40 @@ namespace DataAccess
                     };
                 }
             } catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                dataReader.Close();
+                CloseConnection();
+            }
+            return member;
+        }
+        //--------------------------------------
+        public Member GetMemberByEmail(string memberEmail)
+        {
+            Member member = null;
+            IDataReader dataReader = null;
+            string SQLSelect = "Select MemberId, Email, CompanyName, City, Country, Password from Member where Email = @Email";
+            try
+            {
+                var param = dataProvider.CreateParameter("@Email", 100, memberEmail, DbType.String);
+                dataReader = dataProvider.GetDataReader(SQLSelect, CommandType.Text, out connection, param);
+                if (dataReader.Read())
+                {
+                    member = new Member
+                    {
+                        MemberId = dataReader.GetInt32(0),
+                        Email = dataReader.GetString(1),
+                        CompanyName = dataReader.GetString(2),
+                        City = dataReader.GetString(3),
+                        Country = dataReader.GetString(4),
+                        Password = dataReader.GetString(5)
+                    };
+                }
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
@@ -176,6 +212,48 @@ namespace DataAccess
             finally
             {
                 CloseConnection();
+            }
+        }
+        //-------------------------
+        //Check login + authorisation --> Return MemberID, MemberID > 0
+        //If logging in as admin, return 0.
+        public int CheckLogin(string email, string password)
+        {
+            IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", true, true)
+                .Build();
+
+            string adminEmail = configuration.GetSection("DefaultAccount").GetSection("Email").Value;
+            string adminPassword = configuration.GetSection("DefaultAccount").GetSection("Password").Value;
+
+            if (!string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
+            {
+                if (email.Equals(adminEmail) && password.Equals(adminPassword))
+                {
+                    return 0;
+                } 
+                Member memberObject = GetMemberByEmail(email);
+                if (memberObject != null)
+                {
+                    if (memberObject.Password.Equals(password))
+                    {
+                        return memberObject.MemberId;
+                    }
+                    else
+                    {
+                        throw new Exception("Email or password is incorrect.");
+                    }
+                }
+                else
+                {
+                    throw new Exception("Email or password is incorrect.");
+                }
+
+            }
+            else
+            {
+                throw new Exception("Empty string.");
             }
         }
     }

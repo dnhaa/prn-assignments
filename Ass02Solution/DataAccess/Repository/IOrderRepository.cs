@@ -10,5 +10,6 @@ namespace DataAccess.Repository
         void InsertOrder(Order order);
         void UpdateOrder(Order order);
         void DeleteOrder(int orderId);
+        IEnumerable<Order> GetOrderListForMember(Member member);
     }
 }

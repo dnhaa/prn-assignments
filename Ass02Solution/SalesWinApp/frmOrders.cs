@@ -8,6 +8,7 @@ namespace SalesWinApp
     public partial class frmOrders : Form
     {
         IOrderRepository orderRepository = new OrderRepository();
+        public Member MemberInfo { get; set; }
         BindingSource source;
 
         public frmOrders()
@@ -19,23 +20,33 @@ namespace SalesWinApp
         {
             btnDelete.Enabled = false;
             dgvOrderList.CellDoubleClick += dgvOrderList_CellDoubleClick;
+            if (MemberInfo != null)
+            {
+                btnDelete.Visible = false;
+                btnNew.Visible = false;
+            }
         }
 
         private void dgvOrderList_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmOrderDetails frmOrderDetails = new frmOrderDetails
+            if (MemberInfo == null)
             {
-                Text = "Update member",
-                InsertOrUpdate = true,
-                OrderInfo = GetOrderObject(),
-                OrderRepository = orderRepository
+                frmOrderDetails frmOrderDetails = new frmOrderDetails
+                {
+                    Text = "Update member",
+                    InsertOrUpdate = true,
+                    OrderInfo = GetOrderObject(),
+                    OrderRepository = orderRepository
 
-            };
-            if (frmOrderDetails.ShowDialog() == DialogResult.OK)
-            {
-                LoadOrderList();
-                source.Position = source.Count - 1;
+                };
+                if (frmOrderDetails.ShowDialog() == DialogResult.OK)
+                {
+                    LoadOrderList();
+                    source.Position = source.Count - 1;
+                }
+
             }
+            
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
@@ -105,7 +116,12 @@ namespace SalesWinApp
         }
         public void LoadOrderList()
         {
+            
             var orders = orderRepository.GetOrders();
+            if (MemberInfo != null)
+            {
+                orders = orderRepository.GetOrderListForMember(MemberInfo);
+            }
             try
             {
                 source = new BindingSource();

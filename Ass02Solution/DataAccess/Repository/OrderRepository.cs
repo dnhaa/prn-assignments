@@ -13,6 +13,8 @@ namespace DataAccess.Repository
 
         public Order GetOrderById(int orderId) => OrderDAO.Instance.GetOrderById(orderId);
 
+        public IEnumerable<Order> GetOrderListForMember(Member member) => OrderDAO.Instance.GetOrderListForMember(member);
+
         public IEnumerable<Order> GetOrders() => OrderDAO.Instance.GetOrderList();
 
         public void InsertOrder(Order order) => OrderDAO.Instance.AddNewOrder(order);
