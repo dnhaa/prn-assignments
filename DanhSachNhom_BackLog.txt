@@ -1,0 +1,22 @@
+Danh sách nhóm:
+
+1. Đỗ Ngân Hà
+2. Phan Thanh Đức
+3. Nguyễn Hoàng Thái
+
+Backlog:
+- Member Feature:
+	+ Login : Phan Thanh Đức
+	+ CRUD member : Phan Thanh Đức
+	+ Controller : Phan Thanh Đức
+	+ View : Phan Thanh Đức
+- Product Feature: 
+	+ CRUD product : Nguyễn Hoàng Thái
+	+ Search product : Nguyễn Hoàng Thái
+	+ Controller : Đỗ Ngân Hà
+	+ View : Đỗ Ngân Hà
+- Sale feature:
+	+ Generate sale : Đỗ Ngân Hà
+	+ Filter by Date : Đỗ Ngân Hà
+	+ Controller : Đỗ Ngân Hà
+	+ View : Đỗ Ngân Hà
